@@ -1,0 +1,156 @@
+/* Scrollbar */
+
+html {
+  overflow-y: scroll;
+  scrollbar-color: rgb(67, 67, 199) #222;
+  scrollbar-width: thin;
+}
+
+/* Ogólne */
+body {
+  margin:0;
+  padding: 0;
+  background-image: url('Bg.webp');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: cover;
+}
+
+body:before {
+    content: url('Bg.webp');
+    display: none;
+  }
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* Pasek Nawigacji */
+ul.topnav {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #333;
+padding-left: 7%;
+}
+
+ul.topnav li {
+  float: left;
+}
+
+ul.topnav li a {
+display: block;
+color: white;
+text-align: center;
+text-decoration: none;
+}
+
+
+/* Filtrowanie Tagów */
+.tag{
+  display: inline-block;
+  background-color: none;
+  color: black;
+  margin: 3px;
+  text-align: center;
+  max-width: 128px;
+  max-height: 256px;
+  text-decoration: none;
+  filter: brightness(80%);
+  user-select: none;
+}
+
+.tag-filter{
+  display: inline-block;
+  background-color: transparent;
+  color: white;
+  margin: 4px;
+  text-align: center;
+  text-decoration: none;
+  min-width:64px;
+  min-height:64px;
+  vertical-align: middle;
+  user-select: none;
+}
+
+.active {
+  background-color: rgba(230, 171, 22, 0.301);
+  color: white;
+}
+
+.tag-filter:hover {
+  cursor: pointer;
+}
+
+.tag:hover
+{
+  filter: brightness(100%);
+  cursor: pointer;
+}
+
+/* Responsive Design */
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+  float: left;
+  padding-left: 7%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/* Sekcja Banery  
+
+.banner-container {
+  position: flex;
+  height: 300px;
+  width: 600px;
+}
+
+.banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.banner.active {
+  opacity: 1;
+}
+*/
+
+
+/*Ikony Postaci */
+
+.tag:before {
+  content: url("");
+}
+
+/* Ikony Filtrów */
+.tag-filter:before {
+  content: url("");
+}
+
+
+
