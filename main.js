@@ -27,44 +27,24 @@ $(document).ready(function() {
     // Reset
     $("#reset-btn").click(function() {
       $(".tag-filter").removeClass("active");
-      $(".tag").show();
+      $(".tag").show(300);
     });
     
     if (activeFilters1.length === 0 && activeFilters2.length === 0) {
       // Show all items if no filters are active
-      $(".tag").show();
+      $(".tag").show(300);
     } else if (activeFilters1.length > 0 && activeFilters2.length === 0) {
       // Show only items that match any of the active filters in the first group
-      $(".tag").hide().filter("." + activeFilters1.join(",.")).show();
+      $(".tag").hide().filter("." + activeFilters1.join(",.")).show(300);
     } else if (activeFilters1.length === 0 && activeFilters2.length > 0) {
       // Show only items that match any of the active filters in the second group
-      $(".tag").hide().filter("." + activeFilters2.join(",.")).show();      
+      $(".tag").hide().filter("." + activeFilters2.join(",.")).show(300);      
     } else {
       // Show all items that match any of the active filters in the first group
       // Then refine the selection to only those that also match the active filters in the second group
-      $(".tag").hide().filter("." + activeFilters1.join(",.")).filter("." + activeFilters2.join(".")).show();
+      $(".tag").hide().filter("." + activeFilters1.join(",.")).filter("." + activeFilters2.join(".")).show(300);
     }
   });
-});
-
-
-
-//Bannery Display
-$(document).ready(function() {
-  var banners = $('.banner');
-  var currentBannerIndex = 0;
-  var bannerInterval = setInterval(changeBanner, 3000);
-
-  function changeBanner() {
-    var currentBanner = banners.eq(currentBannerIndex);
-    currentBanner.removeClass('active');
-    currentBannerIndex++;
-    if (currentBannerIndex >= banners.length) {
-      currentBannerIndex = 0;
-    }
-    var nextBanner = banners.eq(currentBannerIndex);
-    nextBanner.addClass('active');
-  }
 });
 
 //New
