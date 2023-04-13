@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <style>
-    body {
-        background-color: #0D1F3C;
-        /* set a solid color */
-        background-image: none;
-        /* remove any previous background image */
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        background-size: cover;
-    }
-</style>
     <meta http-equiv="Cache-Control" content="max-age=604800, public">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" href="main_css.css">
     <link rel="stylesheet" href="menu.css">
+    <style>
+      body {
+          background-color: #0D1F3C;
+          background-repeat: no-repeat;
+          background-attachment: scroll;
+          background-size: cover;
+      }
+  </style>
 </head>
-<body>
+
+<body class="bg-image">
   <div id="menu">
     <object type="text/html" data="menu.html"></object>
   </div>
@@ -45,7 +44,6 @@
     <li><button id="reset-btn">Reset</button></li>
   </div> 
 </ul>
-
 
 <div class="tag-container">
   <a href="character_Info.html?id=Arlan"><div class='tag Lighting Destruction' id="Arlan"></div></a>
@@ -75,7 +73,6 @@
   <a href="character_Info.html?id=Tingyun"><div class='tag Lighting Harmony' id="Tingyun"></div></a>
   <a href="character_Info.html?id=Welt"><div class='tag Imaginary Nihility' id="Welt"></div></a>
   <a href="character_Info.html?id=Yanqing"><div class='tag Ice Hunt' id="Yanqing"></div></a>
-  <!--<div class='tag Quantum Abundance' id="Main Character"></div>-->
 </div>  
 
 <script
@@ -83,13 +80,12 @@
 			  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
 			  crossorigin="anonymous"></script>
 <script type="text/javascript" src="main.js" defer></script>
-<script type="text/javascript" src="filters.js" defer></script>
 <script type="text/javascript" src="character_data.js" defer></script>
 <script>
   const img = new Image();
   img.src = 'Bg.webp';
   img.onload = function () {
-      document.querySelector('.bg-img').style.backgroundImage = `url(${img.src})`;
+      document.querySelector('.bg-image').style.backgroundImage = `url(${img.src})`;
   }
 </script>
 
