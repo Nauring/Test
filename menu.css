@@ -36,7 +36,7 @@ body {
     text-decoration: none;
     filter: brightness(0.8);
     padding: 8px 0 0;
-    display: none;
+    display: block;
 }
 
 .menu-button:hover{

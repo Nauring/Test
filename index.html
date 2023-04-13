@@ -17,10 +17,17 @@
   </style>
 </head>
 
+
 <body class="bg-image">
-  <div id="menu">
-    <object type="text/html" data="menu.html"></object>
+
+  <div id="preloader">
+    <div class="loader"></div>
   </div>
+  
+  <div id="menu">
+    <iframe src="menu.html" frameborder="0"></iframe>
+</div>
+
 
 <ul class="topnav">
   <div id="filter-container1">
@@ -88,6 +95,19 @@
       document.querySelector('.bg-image').style.backgroundImage = `url(${img.src})`;
   }
 </script>
+
+
+
+<script>
+  document.onreadystatechange = function () {
+    if (document.readyState === 'complete') {
+      setTimeout(() => {
+        document.getElementById('preloader').style.display = 'none';
+      }, 500); // Adjust the delay before hiding the preloader (in milliseconds)
+    }
+  };
+</script>
+
 
 </body>
 </html>

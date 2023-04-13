@@ -31,3 +31,25 @@ $(document).ready(function() {
     }
   });
 });
+
+// Animate Name and Icons
+
+$(document).ready(function() {
+  $("#character-info").hide().slideDown(500).fadeIn(500);
+});
+
+// Back Button
+
+$(document).ready(function() {
+  // Check if there is history to go back to
+  if (history.length > 1) {
+    // Show the back button
+    $('#backButton').css('display', 'block');
+  }
+
+  // Add click event to the back button
+  $('#backButton').click(function() {
+    // Go back to the previous page
+    window.history.back();
+  });
+});

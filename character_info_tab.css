@@ -188,3 +188,30 @@ html {
   visibility: visible;
   opacity: 1;
 }
+
+/**/
+
+#backButton {
+  display: flex;
+  margin-left: 10%;
+  content: url("backicon.webp");
+  cursor: pointer;
+}
+
+
+
+/* Add this CSS code */
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+#Character_Splash_Art {
+  animation: slideInFromRight 0.5s ease-out forwards;
+  position: relative;
+}
