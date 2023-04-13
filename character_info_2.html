@@ -2,6 +2,11 @@
 <html lang="en">
 
 <head>
+   
+    <script
+			  src="https://code.jquery.com/jquery-3.6.4.min.js"
+			  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+			  crossorigin="anonymous"></script>
     <style>
         body {
             background-color: #0D1F3C;
@@ -13,20 +18,12 @@
             background-size: cover;
         }
     </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script>      
-    $(window).load(function() {
-  $('.box-content').hide();
-});
-     </script>
-
 
 
     <meta http-equiv="Cache-Control" content="max-age=604800, public">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="menu.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="character_info_tab.css">
 </head>
 
@@ -138,7 +135,7 @@
             document.querySelector('.bg-img').style.backgroundImage = `url(${img.src})`;
         }
     </script>
-    <script type="text/javascript" src="character_info_script.js"></script>
+    <script type="text/javascript" src="character_info_script.js" defer></script>
     <script type="text/javascript" src="character_data.js" defer></script>
     <script type="text/javascript" src="loader.js" defer></script>
 </body>
