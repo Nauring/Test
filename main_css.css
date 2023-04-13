@@ -1,3 +1,5 @@
+/* Styling of index.html */
+
 /* Scrollbar */
 
 html {
@@ -6,14 +8,10 @@ html {
   scrollbar-width: thin;
 }
 
-/* Ogólne */
+/* General */
 body {
   margin:0;
   padding: 0;
-  background-image: url('Bg.webp');
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
-  background-size: cover;
 }
 
 
@@ -22,7 +20,7 @@ body {
 }
 
 
-/* Navigation */
+/* Filter Bar and Filter styling */
 ul.topnav {
   display: flex;
   justify-content: center;

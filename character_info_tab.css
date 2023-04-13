@@ -1,4 +1,4 @@
-/* Ogólne */
+/* Genral */
 
 body {
   margin: 0;
@@ -26,7 +26,7 @@ img {
   max-height: 900px;
 }
 
-/* Imię + Element + Path */
+/* Name and other seen at op of character_info.html */
 #character-info {
   display: flex;
   color: #f1ebeb;
@@ -61,7 +61,7 @@ img {
   font-size: 32px;
 }
 
-/* Przyciski */
+/* Buttons */
 
 .box {
   display: flex;
@@ -99,7 +99,7 @@ img {
 }
 
 
-/* Konent odpalaony po przyciskach */
+/* Content seen after pressing buttons */
 
 .box-content {
   position: absolute;
@@ -124,7 +124,7 @@ img {
   color: white;
 }
 
-/* Okienko z skillami */
+/* Content in "skills" button */
 
 .container {
   display: flex;
